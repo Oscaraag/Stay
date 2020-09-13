@@ -1,0 +1,49 @@
+{
+	"name": "stay",
+	"version": "1.0.0",
+	"description": "Portfolio Oscar Angel",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode production",
+		"dev": "webpack-dev-server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Oscaraag/Stay.git"
+	},
+	"author": "oscar angel",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Oscaraag/Stay/issues"
+	},
+	"homepage": "https://github.com/Oscaraag/Stay#readme",
+	"devDependencies": {
+		"@babel/core": "^7.11.6",
+		"@babel/plugin-transform-runtime": "^7.11.5",
+		"@babel/preset-env": "^7.11.5",
+		"@babel/preset-react": "^7.10.4",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.1.0",
+		"css-loader": "^4.3.0",
+		"file-loader": "^6.1.0",
+		"html-webpack-plugin": "^4.4.1",
+		"node-sass": "^4.14.1",
+		"sass-loader": "^10.0.2",
+		"standard": "^14.3.4",
+		"style-loader": "^1.2.1",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"eslintConfig": {
+		"parser": "babel-eslint",
+		"extends": [
+			"./node_modules/standard/eslintrc.json"
+		]
+	},
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	}
+}

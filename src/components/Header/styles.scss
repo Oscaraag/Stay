@@ -1,0 +1,121 @@
+$primary-color: #30054c;
+$text-color-1: #fff;
+$text-blue-color: #14ffec;
+
+$box-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
+	0 0 40px $text-blue-color, 0 0 25px $text-blue-color,
+	0 0 25px $text-blue-color, 0 0 20px $text-blue-color,
+	0 0 10px $text-blue-color;
+
+$text-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
+	0 0 40px $text-blue-color, 0 0 25px $text-blue-color,
+	0 0 25px $text-blue-color, 0 0 20px $text-blue-color,
+	0 0 10px $text-blue-color;
+
+$first-transition: all 0.5s ease-in-out;
+
+nav {
+	position: relative;
+	height: 10vh;
+	width: 100%;
+}
+.list {
+	margin-top: 0.5rem;
+	width: 14rem;
+	height: 25vh;
+	background-color: $primary-color;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	position: absolute;
+	right: 5%;
+	top: 25%;
+	transform: translate(-5%, 20%);
+
+	&.display {
+		visibility: visible;
+
+		& .list-item {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		& .list-item a {
+			text-decoration: none;
+			color: $text-color-1;
+		}
+
+		& .list-item li {
+			transition: $first-transition;
+			margin-bottom: 1rem;
+		}
+		& .list-item a:hover {
+			text-shadow: $text-neon-glow;
+		}
+		& .list-item li:hover {
+			transform: scale(1.2);
+
+			color: $text-blue-color;
+		}
+	}
+}
+
+.hamburger {
+	cursor: pointer;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	transform: translate(-5%, -50%);
+	align-items: center;
+	height: 4.2rem;
+	transition: $first-transition;
+
+	& .hamburger-line {
+		height: 0.2rem;
+		background: white;
+		width: 3rem;
+
+		transition: all 0.8s ease-in-out;
+	}
+	.hamburger-line::before {
+		content: '';
+		position: absolute;
+		bottom: 1rem;
+		height: 0.2rem;
+		background: white;
+		width: 3rem;
+
+		transition: $first-transition;
+	}
+	.hamburger-line::after {
+		content: '';
+		position: absolute;
+		top: 1rem;
+		height: 0.2rem;
+		background: white;
+		width: 3rem;
+		transition: $first-transition;
+	}
+}
+
+.false .hamburger-line {
+	transform: translateX(-10%);
+	background: transparent;
+	box-shadow: none;
+}
+
+.false .hamburger-line::before {
+	transform: rotate(45deg) translate(1rem, 0.5rem);
+	box-shadow: $box-neon-glow;
+}
+.false .hamburger-line::after {
+	transform: rotate(-45deg) translate(0.85rem, -0.5rem);
+	box-shadow: $box-neon-glow;
+}
