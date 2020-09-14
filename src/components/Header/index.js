@@ -8,7 +8,7 @@ export const Header = () => {
   const { showMenu, setShowMenu, isOpen, setIsOpen } = useShowMenu()
   const MenuHandler = () => {
     setIsOpen(!isOpen)
-    isOpen ? setShowMenu('display') : setShowMenu('hidden')
+    isOpen ? setShowMenu('display') : setShowMenu('')
   }
 
   return (

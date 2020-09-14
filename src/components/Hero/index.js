@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className='hero-container'>
       <div className='hero-name-container'>
-        <h1>.... - .- --.- .-.-.. </h1>
+        <h1>... - .- -.--</h1>
         <h2>Stay</h2>
       </div>
       <figure className='hero-img-container'>
