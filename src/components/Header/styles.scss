@@ -15,9 +15,10 @@ $text-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
 $first-transition: all 0.5s ease-in-out;
 
 nav {
-	position: relative;
+	position: fixed;
 	height: 10vh;
 	width: 100%;
+	z-index: 1;
 }
 .list {
 	margin-top: 0.5rem;
@@ -33,7 +34,9 @@ nav {
 	right: 5%;
 	top: 25%;
 	transform: translate(-5%, 20%);
-
+	&.hidden {
+		visibility: hidden;
+	}
 	&.display {
 		visibility: visible;
 
@@ -53,6 +56,7 @@ nav {
 		& .list-item li {
 			transition: $first-transition;
 			margin-bottom: 1rem;
+			cursor: pointer;
 		}
 		& .list-item a:hover {
 			text-shadow: $text-neon-glow;

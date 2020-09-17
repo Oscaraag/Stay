@@ -7,9 +7,14 @@ $background-color-primary: #0d0227;
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: $background-color-primary;
 	font-size: 1.6rem;
+}
+
+.body-overflow {
+	overflow-y: hidden;
 }

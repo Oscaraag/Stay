@@ -1,0 +1,15 @@
+$text-blue-color: #14ffec;
+
+.title-container {
+	padding: 4rem 0;
+	display: flex;
+	color: $text-blue-color;
+	justify-content: center;
+	width: 100%;
+	grid-row: 1;
+	grid-column: 1/5;
+}
+
+.title {
+	font-size: 3rem;
+}

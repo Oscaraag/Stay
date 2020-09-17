@@ -1,0 +1,34 @@
+$text-blue-color: #14ffec;
+$box-neon-glow: 0 0 5px #51fff1, 0 0 5px$text-blue-color,
+	0 0 40px$text-blue-color, 0 0 25px$text-blue-color, 0 0 25px$text-blue-color,
+	0 0 20px$text-blue-color, 0 0 10px$text-blue-color;
+
+.about-me-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	// grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.social-logo-container {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1.6rem;
+	padding-bottom: 1.6rem;
+}
+
+.child2 {
+	font-size: 2em;
+	color: #fff;
+	margin-right: 1.6rem;
+	transition: text-shadow 0.4s ease-in-out;
+	&:hover {
+		cursor: pointer;
+		text-shadow: $box-neon-glow;
+	}
+}
