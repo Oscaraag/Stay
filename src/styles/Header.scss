@@ -1,18 +1,4 @@
-$primary-color: #30054c;
-$text-color-1: #fff;
-$text-blue-color: #14ffec;
-
-$box-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
-	0 0 40px $text-blue-color, 0 0 25px $text-blue-color,
-	0 0 25px $text-blue-color, 0 0 20px $text-blue-color,
-	0 0 10px $text-blue-color;
-
-$text-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
-	0 0 40px $text-blue-color, 0 0 25px $text-blue-color,
-	0 0 25px $text-blue-color, 0 0 20px $text-blue-color,
-	0 0 10px $text-blue-color;
-
-$first-transition: all 0.5s ease-in-out;
+@import './variables';
 
 nav {
 	position: fixed;
@@ -54,12 +40,12 @@ nav {
 		}
 
 		& .list-item li {
-			transition: $first-transition;
+			transition: $header-transition;
 			margin-bottom: 1rem;
 			cursor: pointer;
 		}
 		& .list-item a:hover {
-			text-shadow: $text-neon-glow;
+			text-shadow: $text-header-neon-glow;
 		}
 		& .list-item li:hover {
 			transform: scale(1.2);
@@ -79,7 +65,7 @@ nav {
 	transform: translate(-5%, -50%);
 	align-items: center;
 	height: 4.2rem;
-	transition: $first-transition;
+	transition: $header-transition;
 
 	& .hamburger-line {
 		height: 0.2rem;
@@ -96,7 +82,7 @@ nav {
 		background: white;
 		width: 3rem;
 
-		transition: $first-transition;
+		transition: $header-transition;
 	}
 	.hamburger-line::after {
 		content: '';
@@ -105,7 +91,7 @@ nav {
 		height: 0.2rem;
 		background: white;
 		width: 3rem;
-		transition: $first-transition;
+		transition: $header-transition;
 	}
 }
 
@@ -117,9 +103,9 @@ nav {
 
 .false .hamburger-line::before {
 	transform: rotate(45deg) translate(1rem, 0.5rem);
-	box-shadow: $box-neon-glow;
+	box-shadow: $box-header-neon-glow;
 }
 .false .hamburger-line::after {
 	transform: rotate(-45deg) translate(0.85rem, -0.5rem);
-	box-shadow: $box-neon-glow;
+	box-shadow: $box-header-neon-glow;
 }

@@ -21,7 +21,7 @@ export const HeaderNav = ({ showMenu, setShowMenu, setIsOpen }) => {
           <Link onClick={isVisibleHandler} to='about-me'>About me</Link>
         </li>
         <li>
-          <Link onClick={isVisibleHandler} to=''>Skills</Link>
+          <Link onClick={isVisibleHandler} to='skills'>Skills</Link>
         </li>
         <li>
           <a onClick={isVisibleHandler} href='#'>Portfolio</a>

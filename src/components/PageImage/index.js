@@ -1,6 +1,5 @@
 import React from 'react'
 
-import './styles.scss'
 import astro from '../../../public/img/astro.svg'
 
 export const PageImage = () => {

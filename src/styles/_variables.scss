@@ -1,0 +1,30 @@
+$text-blue-color: #14ffec;
+$text-yellow-color: #f6f980;
+$transitionSkills: all 0.2s ease-in-out;
+$primary-color: #30054c;
+$text-color-1: #fff;
+
+@function textShadow($color) {
+	$box-neon-glow: 0 0 5px #e44d26, 0 0 5px$color, 0 0 5px$color, 0 0 25px$color,
+		0 0 5px$color, 0 0 20px$color, 0 0 10px$color;
+
+	@return $box-neon-glow;
+}
+
+$box-neon-glow: 0 0 5px #51fff1, 0 0 5px$text-blue-color,
+	0 0 40px$text-blue-color, 0 0 25px$text-blue-color, 0 0 25px$text-blue-color,
+	0 0 20px$text-blue-color, 0 0 10px$text-blue-color;
+
+$text-neon-glow: 0 0 4px #f6f980, 0 0 0.35rem $text-yellow-color;
+
+$box-header-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
+	0 0 40px $text-blue-color, 0 0 25px $text-blue-color,
+	0 0 25px $text-blue-color, 0 0 20px $text-blue-color,
+	0 0 10px $text-blue-color;
+
+$text-header-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
+	0 0 40px $text-blue-color, 0 0 25px $text-blue-color,
+	0 0 25px $text-blue-color, 0 0 20px $text-blue-color,
+	0 0 10px $text-blue-color;
+
+$header-transition: all 0.5s ease-in-out;

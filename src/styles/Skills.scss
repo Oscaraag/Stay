@@ -1,0 +1,102 @@
+@import './animations';
+@import './variables';
+
+.skills-container {
+	display: flex;
+	height: 100vh;
+}
+
+.skills-lateral-container {
+	display: flex;
+	flex-direction: column;
+	padding-left: 14%;
+	margin-right: 5%;
+	justify-content: center;
+	align-items: center;
+	color: $text-blue-color;
+	& .skills-lateral-h1 {
+		font-size: 6rem;
+	}
+}
+
+.skills-icons-container {
+	display: grid;
+	grid-template-columns: 6rem 6rem;
+	grid-template-rows: repeat(4, 10.6rem);
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	column-gap: 25%;
+	width: 70vw;
+}
+
+.skills-icon-container {
+	text-align: center;
+
+	& .skills-icon {
+		font-size: 5.5rem;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+.icon-glow-html,
+.icon-glow-css,
+.icon-glow-js,
+.icon-glow-sass,
+.icon-glow-git,
+.icon-glow-npm,
+.icon-glow-node,
+.icon-glow-react {
+	transition: all 3.7s ease-in-out;
+}
+
+.icon-glow-html:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#e44d26);
+}
+.icon-glow-css:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#2299f8);
+}
+.icon-glow-js:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#f7df1e);
+}
+.icon-glow-react:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#00c8ff);
+}
+.icon-glow-sass:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#cd6799);
+}
+.icon-glow-git:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#ff4e21);
+}
+.icon-glow-npm:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#c53031);
+}
+.icon-glow-node:hover {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#88ff00);
+}
+
+.skills-description {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Mulish', sans-serif;
+	padding-top: 1rem;
+	color: $text-yellow-color;
+	opacity: 0;
+}
+.show-skill {
+	animation: focus-in-expand-fwd 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.bucle {
+	animation: focus-in-expand-fwd2 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}

@@ -9,12 +9,16 @@ import { SocialLogos } from '../containers/SocialLogos'
 
 export const AboutMe = () => {
   return (
-    <div className='about-me-container'>
+    <div name='about-me' className='about-me-container'>
       <PageTitle title='About me' />
-      <LateralTitle LateralTitle='Explore Youre mind' />
+      <LateralTitle
+        classNameH1='lateral-title-1'
+        classNameContainer='lateral-title-container'
+        LateralTitle='Explore Youre mind'
+      />
       <PageImage />
-      <TextDescription description={`Soy desarrollador web, Venezolano
-      amante de la tecnologia, las ciencias en general y la vida, si lo imaginas es posible, hagamoslo!!`}
+      <TextDescription
+        description='Soy desarrollador web, Venezolano amante de la tecnologia, las ciencias en general y la vida, si lo imaginas es posible, hagamoslo!!'
       />
       <SocialLogos />
     </div>

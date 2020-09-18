@@ -1,24 +1,18 @@
-$text-blue-color: #14ffec;
-$box-neon-glow: 0 0 5px #51fff1, 0 0 5px$text-blue-color,
-	0 0 40px$text-blue-color, 0 0 25px$text-blue-color, 0 0 25px$text-blue-color,
-	0 0 20px$text-blue-color, 0 0 10px$text-blue-color;
-
+@import './variables';
 .about-me-container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
 	position: relative;
-
-	// grid-template-columns: 1fr 1fr 1fr 1fr;
-	// grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .social-logo-container {
-	margin-top: 2rem;
+	margin-top: 5%;
 	display: flex;
 	justify-content: flex-end;
-	margin-right: 1.6rem;
+	margin-right: auto;
+	margin-left: 60%;
 	padding-bottom: 1.6rem;
 }
 
@@ -31,4 +25,49 @@ $box-neon-glow: 0 0 5px #51fff1, 0 0 5px$text-blue-color,
 		cursor: pointer;
 		text-shadow: $box-neon-glow;
 	}
+}
+
+.lateral-title-container {
+	color: $text-yellow-color;
+	position: absolute;
+	transform: rotate(-90deg);
+	bottom: 52%;
+	left: -30%;
+}
+.lateral-title-1 {
+	letter-spacing: 0.18rem;
+}
+
+.about-me-img-container img {
+	width: 23rem;
+}
+.about-me-img-container {
+	position: absolute;
+	right: 3rem;
+	top: 12rem;
+}
+.title-container {
+	padding: 4rem 0;
+	display: flex;
+	color: $text-blue-color;
+	justify-content: center;
+	width: 100%;
+	grid-row: 1;
+	grid-column: 1/5;
+}
+
+.title {
+	font-size: 3rem;
+}
+
+.description-container {
+	color: #fff;
+	width: 80%;
+	height: 100vh;
+	display: flex;
+	margin: 0 auto;
+	align-items: flex-end;
+
+	font-family: 'Mulish', sans-serif;
+	font-size: 1.8rem;
 }

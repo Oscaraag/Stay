@@ -4,8 +4,6 @@ import { useShowMenu } from '../../hooks/useShowMenu'
 import { HamburgerMenu } from '../HamburgerMenu'
 import { HeaderNav } from '../HeaderNav/index'
 
-import './styles.scss'
-
 export const Header = () => {
   const { showMenu, setShowMenu, isOpen, setIsOpen } = useShowMenu()
   const MenuHandler = () => {
