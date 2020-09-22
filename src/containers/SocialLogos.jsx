@@ -1,4 +1,5 @@
 import React from 'react'
+import { Icon } from '../components/Icon'
 
 export const SocialLogos = () => {
   const openGithubUrl = () => {
@@ -9,8 +10,8 @@ export const SocialLogos = () => {
 
   return (
     <div className='social-logo-container'>
-      <i onClick={openGithubUrl} className='fab fa-github child2' />
-      <a href={`mailto: ${email}`}><i className='far fa-envelope child2' /></a>
+      <Icon onClick={openGithubUrl} classIcon1='fab fa-github child2' />
+      <a href={`mailto: ${email}`}><Icon classIcon1='far fa-envelope child2' /></a>
     </div>
   )
 }

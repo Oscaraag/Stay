@@ -16,7 +16,8 @@ export const SkillsContainer = () => {
       <div className='skills-icons-container'>
         <SkillsIcon
 
-          iconName='fab fa-html5 icon-glow-html' skill='HTML 5'
+          iconName='fab fa-html5 icon-glow-html'
+          skill='HTML 5'
         />
         <SkillsIcon
           iconName='fab fa-css3-alt icon-glow-css'

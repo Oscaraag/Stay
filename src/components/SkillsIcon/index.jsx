@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { SkillsDescription } from '../SkillsDescription'
+import { Icon } from '../Icon'
 
 export const SkillsIcon = ({ iconName, skill }) => {
   const [showDescription, setShowDescription] = useState('')
@@ -9,9 +10,10 @@ export const SkillsIcon = ({ iconName, skill }) => {
 
   return (
     <div className='skills-icon-container'>
-      <i
+      <Icon
         onClick={showDescriptionHandler}
-        className={`${iconName} skills-icon`}
+        classIcon1={iconName}
+        classIcon2='skills-icon'
       />
       <SkillsDescription showDescription={showDescription} description={skill} />
     </div>

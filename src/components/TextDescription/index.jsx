@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialLogos } from '../../containers/SocialLogos'
 
 export const TextDescription = ({ description }) => {
   return (
@@ -6,6 +7,7 @@ export const TextDescription = ({ description }) => {
       <span>
         {description}
       </span>
+      <SocialLogos />
     </div>
   )
 }

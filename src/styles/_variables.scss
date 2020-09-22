@@ -28,3 +28,8 @@ $text-header-neon-glow: 0 0 5px #51fff1, 0 0 5px $text-blue-color,
 	0 0 10px $text-blue-color;
 
 $header-transition: all 0.5s ease-in-out;
+
+@mixin htmlGlow {
+	transition: $transitionSkills;
+	text-shadow: textShadow(#e44d26);
+}

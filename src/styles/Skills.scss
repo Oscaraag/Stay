@@ -16,6 +16,7 @@
 	color: $text-blue-color;
 	& .skills-lateral-h1 {
 		font-size: 6rem;
+		font-weight: bold;
 	}
 }
 
@@ -51,8 +52,7 @@
 }
 
 .icon-glow-html:hover {
-	transition: $transitionSkills;
-	text-shadow: textShadow(#e44d26);
+	@include htmlGlow;
 }
 .icon-glow-css:hover {
 	transition: $transitionSkills;

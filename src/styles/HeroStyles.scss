@@ -9,7 +9,7 @@
 	padding-top: 3rem;
 	justify-content: space-around;
 }
-.hero-img-container img {
+.hero-img-container svg {
 	width: 24rem;
 }
 
@@ -28,8 +28,9 @@
 		text-shadow: $text-neon-glow;
 	}
 }
-.hero-img-indicator-container img {
+.hero-img-indicator-container svg {
 	width: 3rem;
+	cursor: pointer;
 	animation: breath 2s ease-in-out infinite;
 }
 

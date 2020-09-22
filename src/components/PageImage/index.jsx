@@ -1,11 +1,16 @@
 import React from 'react'
-
-import astro from '../../../public/img/astro.svg'
+import { LateralTitle } from '../LateralTitle'
+import astro from '../../../public/img/astro.png'
 
 export const PageImage = () => {
   return (
-    <figure className='about-me-img-container'>
+    <div className='about-me-img-container'>
+      <LateralTitle
+        classNameH1='lateral-title-1'
+        classNameContainer='lateral-title-container'
+        LateralTitle={'EXPLORE YOU\'RE MIND'}
+      />
       <img src={astro} alt='image' />
-    </figure>
+    </div>
   )
 }
