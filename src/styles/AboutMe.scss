@@ -9,17 +9,6 @@
 	justify-items: center;
 }
 
-.child2 {
-	font-size: 2em;
-	color: #fff;
-	margin-right: 1.6rem;
-	transition: text-shadow 0.4s ease-in-out;
-	&:hover {
-		cursor: pointer;
-		text-shadow: $box-neon-glow;
-	}
-}
-
 .lateral-title-container {
 	color: $text-yellow-color;
 	transform: rotate(180deg);
@@ -35,7 +24,7 @@
 
 .about-me-img-container img {
 	width: 24rem;
-	margin-right: 10%;
+	margin-right: 5%;
 }
 .about-me-img-container {
 	display: flex;
@@ -73,4 +62,14 @@
 	display: flex;
 	margin-top: 1.6rem;
 	margin-left: 60%;
+}
+.social-logo-child {
+	font-size: 2em;
+	color: #fff;
+	margin-right: 3.2rem;
+	transition: text-shadow 0.4s ease-in-out;
+	&:hover {
+		cursor: pointer;
+		text-shadow: $box-neon-glow;
+	}
 }

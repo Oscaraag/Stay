@@ -19,7 +19,9 @@ export const PortfolioItemContainer = () => {
   return (
     <>
 
-      <PortfolioItem handlePortfolioDescription={handlePortfolioDescription} showWebName={showWebName} offsetY={offsetY} srcImage={imgSrc} />
+      <PortfolioItem
+        siteName='Stay.dev' handlePortfolioDescription={handlePortfolioDescription} showWebName={showWebName} offsetY={offsetY} srcImage={imgSrc}
+      />
 
     </>
   )

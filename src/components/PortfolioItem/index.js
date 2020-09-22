@@ -2,11 +2,13 @@ import React from 'react'
 import { PortfolioDescription } from '../PortfolioDescription'
 import { Icon } from '../Icon'
 
-export const PortfolioItem = ({ handlePortfolioDescription, showWebName, srcImage, imageName, offsetY }) => {
+export const PortfolioItem = ({ siteName, handlePortfolioDescription, showWebName, srcImage, imageName, offsetY }) => {
   return (
     <div className='portfolio-item'>
 
-      <img className='portfolio-img-container' src={srcImage} alt={imageName} />
+      <figure>
+        <img className='portfolio-img-container' src={srcImage} alt={imageName} />
+      </figure>
 
       <PortfolioDescription onClik={handlePortfolioDescription} offsetY={offsetY} ItemName='Stay' ItemType='Personal Web' />
 
@@ -14,7 +16,7 @@ export const PortfolioItem = ({ handlePortfolioDescription, showWebName, srcImag
 
         <div className='portfolio-name-title'>
 
-          <span>stay.dev</span>
+          <span>{siteName}</span>
 
         </div>
 

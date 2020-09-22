@@ -10,8 +10,8 @@ export const SocialLogos = () => {
 
   return (
     <div className='social-logo-container'>
-      <Icon onClick={openGithubUrl} classIcon1='fab fa-github child2' />
-      <a href={`mailto: ${email}`}><Icon classIcon1='far fa-envelope child2' /></a>
+      <Icon onClick={openGithubUrl} classIcon1='fab fa-github social-logo-child' />
+      <a href={`mailto: ${email}`}><Icon classIcon1='far fa-envelope social-logo-child' /></a>
     </div>
   )
 }
