@@ -1,0 +1,20 @@
+@media screen and (min-width: 1200px) {
+	.skills-icons-container {
+		grid-template-rows: 12rem 12rem;
+		grid-template-columns: repeat(4, 16rem);
+		column-gap: 10%;
+		row-gap: 20%;
+	}
+	.skills-lateral-container .skills-lateral-text-container {
+		margin-bottom: 5rem;
+		.skills-lateral-h1 {
+			font-size: 8rem;
+		}
+	}
+	.skills-icon-container .skills-icon {
+		font-size: 12rem;
+	}
+	.skills-description {
+		font-size: 2rem;
+	}
+}

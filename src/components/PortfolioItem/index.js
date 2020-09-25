@@ -1,13 +1,19 @@
 import React from 'react'
 import { PortfolioDescription } from '../PortfolioDescription'
 import { Icon } from '../Icon'
+import { LinkHandler } from '../../utils/LinkHandler'
 
-export const PortfolioItem = ({ siteName, handlePortfolioDescription, showWebName, srcImage, imageName, offsetY }) => {
+export const PortfolioItem = ({ showPortfolioImg, siteName, handlePortfolioDescription, showWebName, srcImage, imageName, offsetY }) => {
+  const openPortfolioItem = () => {
+    const PAGEURL = `https://${siteName}`
+    LinkHandler(PAGEURL)
+  }
+
   return (
     <div className='portfolio-item'>
 
-      <figure>
-        <img className='portfolio-img-container' src={srcImage} alt={imageName} />
+      <figure className={`portfolio-img-container ${showPortfolioImg}`}>
+        <img src={srcImage} alt={imageName} />
       </figure>
 
       <PortfolioDescription onClik={handlePortfolioDescription} offsetY={offsetY} ItemName='Stay' ItemType='Personal Web' />
@@ -16,7 +22,7 @@ export const PortfolioItem = ({ siteName, handlePortfolioDescription, showWebNam
 
         <div className='portfolio-name-title'>
 
-          <span>{siteName}</span>
+          <span onClick={openPortfolioItem}>{siteName}</span>
 
         </div>
 

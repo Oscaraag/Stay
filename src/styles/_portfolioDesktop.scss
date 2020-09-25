@@ -1,0 +1,27 @@
+@media screen and (min-width: 1200px) {
+	.portfolio-item {
+		width: 80%;
+	}
+	.portfolio-description {
+		& h1 {
+			font-size: 5rem;
+		}
+	}
+	.portfolio-name-container {
+		margin-top: 2rem;
+		& .portfolio-name-icons {
+			font-size: 5rem;
+		}
+		& span {
+			font-size: 3rem;
+		}
+		& i {
+			margin-left: 3.2rem;
+		}
+	}
+}
+@media screen and (min-width: 1500px) {
+	.portfolio-item {
+		width: 70%;
+	}
+}

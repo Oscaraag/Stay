@@ -1,4 +1,5 @@
 @import './variables';
+
 .hero-container {
 	color: white;
 	display: flex;
@@ -9,23 +10,36 @@
 	padding-top: 3rem;
 	justify-content: space-around;
 }
-.hero-img-container svg {
-	width: 24rem;
+
+.hero-img-container {
+	width: 70%;
+
+	& svg {
+		width: 100%;
+	}
 }
 
 .hero-name-container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	& h1 {
+		text-align: center;
+		width: 50%;
 		font-size: 3rem;
 		color: #14ffec;
 	}
 	& h2 {
-		font-size: 4rem;
+		font-family: 'Press Start 2P', cursive;
+		width: 50%;
+		text-align: center;
+		font-size: 3rem;
 		color: #f6f980;
 		letter-spacing: 1.6rem;
 		text-shadow: $text-neon-glow;
+		text-align: center;
+		margin-top: 1.6rem;
 	}
 }
 .hero-img-indicator-container svg {
@@ -46,7 +60,11 @@
 	}
 }
 .hero-description-container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
+@import './heroTablet';
+@import './heroDesktop';

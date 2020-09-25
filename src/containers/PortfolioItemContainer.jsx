@@ -3,24 +3,29 @@ import { PortfolioItem } from '../components/PortfolioItem'
 
 import { useScrollParallax } from '../hooks/useScrollParallax'
 
-import descriptionImg from '../../public/img/web.png'
-import portfolioOA from '../../public/img/portfolioOA.png'
+import portfolioOA from '../../public/img/web.png'
+// import descriptionImg from '../../public/img/portfolioOA.png'
 
 export const PortfolioItemContainer = () => {
-  const [imgSrc, setImageSrc] = useState(portfolioOA)
+  const [showPortfolioImg, setShowPortfolioImg] = useState('')
   const [showWebName, setShowWebName] = useState('')
 
   const { offsetY } = useScrollParallax()
 
   const handlePortfolioDescription = () => {
-    imgSrc === portfolioOA ? setShowWebName('show-web-name') : setShowWebName('')
-    imgSrc === portfolioOA ? setImageSrc(descriptionImg) : setImageSrc(portfolioOA)
+    showWebName === '' ? setShowWebName('show-web-name') : setShowWebName('')
+    showPortfolioImg === '' ? setShowPortfolioImg('show') : setShowPortfolioImg('')
   }
   return (
     <>
 
       <PortfolioItem
-        siteName='Stay.dev' handlePortfolioDescription={handlePortfolioDescription} showWebName={showWebName} offsetY={offsetY} srcImage={imgSrc}
+        showPortfolioImg={showPortfolioImg}
+        siteName='Stay.dev'
+        handlePortfolioDescription={handlePortfolioDescription}
+        showWebName={showWebName}
+        offsetY={offsetY}
+        srcImage={portfolioOA}
       />
 
     </>

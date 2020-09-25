@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+	.skills-icons-container {
+		grid-template-columns: 12rem 12rem;
+		grid-template-rows: repeat(4, 16rem);
+	}
+	.skills-icon-container {
+		& .skills-icon {
+			font-size: 9rem;
+		}
+	}
+	.skills-description {
+		font-size: 1.6rem;
+	}
+
+	.skills-lateral-container {
+		& .skills-lateral-text-container {
+			margin-bottom: 4rem;
+		}
+		& .skills-lateral-h1 {
+			font-size: 7rem;
+		}
+	}
+}

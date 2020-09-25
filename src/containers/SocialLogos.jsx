@@ -1,10 +1,12 @@
 import React from 'react'
 import { Icon } from '../components/Icon'
+import { LinkHandler } from '../utils/LinkHandler'
 
 export const SocialLogos = () => {
+  const PAGEURL = 'https://github.com/Oscaraag'
+
   const openGithubUrl = () => {
-    const win = window.open('https://github.com/Oscaraag', '_blank')
-    win.focus()
+    LinkHandler(PAGEURL)
   }
   const email = 'oscaraag1493@gmail.com'
 

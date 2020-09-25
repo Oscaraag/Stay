@@ -1,0 +1,44 @@
+@media screen and (min-width: 1200px) {
+	.lateral-title-container {
+		grid-row: 1;
+		grid-column: 1/3;
+
+		transform: rotate(0deg);
+		writing-mode: horizontal-tb;
+		margin-left: 0;
+		align-self: end;
+	}
+	.description-container {
+		grid-column: 1/3;
+		grid-row: 2/4;
+		justify-self: end;
+		align-self: center;
+		text-align: end;
+
+		.social-logo-container {
+			margin-right: 0;
+			& i {
+				font-size: 6rem;
+			}
+		}
+		span {
+			font-size: 3.2rem;
+		}
+	}
+	.about-me-img-container {
+		grid-row: 1/4;
+
+		img {
+			width: 60%;
+		}
+	}
+}
+
+@media screen and (min-width: 1650px) {
+	.about-me-img-container {
+		align-self: center;
+		img {
+			width: 50%;
+		}
+	}
+}
