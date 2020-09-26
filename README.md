@@ -1,5 +1,7 @@
 # Stay
-Oscar Angel Portfolio 
-> ~$ npm install
 
-> ~$ npm run dev
+Oscar Angel Portfolio
+
+> ~\$ npm install
+
+> ~\$ npm run dev
