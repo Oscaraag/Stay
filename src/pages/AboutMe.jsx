@@ -15,7 +15,7 @@ export const AboutMe = () => {
         LateralTitle={'EXPLORE YOU\'RE MIND'}
       />
       <TextDescription
-        description='Soy desarrollador web, venezolano, nacido en Mérida pero feliz en los llanos, me encanta la tecnología, las ciencias en general, los videojuegos, la música y la vida, actualmente soy frontend developer en especifico trabajo con React.js y todo su ecosistema.'
+        description='Soy desarrollador web, venezolano, nacido en Mérida pero feliz en los llanos, me encanta la tecnología, las ciencias, los videojuegos, la música y la vida, actualmente soy frontend developer me encanta trabajar con React.js y todo su ecosistema.'
       />
       <PageImage />
 
