@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const config = {
   entry: {
@@ -23,7 +25,7 @@ const config = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
         ]
@@ -31,7 +33,7 @@ const config = {
 
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
 
       {
@@ -57,11 +59,14 @@ const config = {
     port: 9000
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       appMountId: 'app',
       template: path.resolve(__dirname, './public/index.html'),
       filename: 'index.html'
-    })
+
+    }),
+    new FaviconsWebpackPlugin('./public/img/favicon.png')
   ]
 }
 

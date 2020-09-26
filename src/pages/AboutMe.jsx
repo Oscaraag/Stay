@@ -7,6 +7,7 @@ import { TextDescription } from '../components/TextDescription'
 
 export const AboutMe = () => {
   return (
+
     <div name='about-me' className='about-me-container'>
       <LateralTitle
         classNameH1='lateral-title-1'
@@ -19,5 +20,6 @@ export const AboutMe = () => {
       <PageImage />
 
     </div>
+
   )
 }
