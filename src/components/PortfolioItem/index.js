@@ -16,7 +16,7 @@ export const PortfolioItem = ({ showPortfolioImg, siteName, handlePortfolioDescr
         <img src={srcImage} alt={imageName} />
       </figure>
 
-      <PortfolioDescription onClik={handlePortfolioDescription} offsetY={offsetY} ItemName='Stay' ItemType='Personal Web' />
+      <PortfolioDescription onClik={handlePortfolioDescription} offsetY={offsetY} ItemName='Stay' ItemType='Personal website' />
 
       <div className={`portfolio-name-container ${showWebName}`}>
 
